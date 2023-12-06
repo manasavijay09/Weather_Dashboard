@@ -1,0 +1,23 @@
+*{
+    padding: opx;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+   background-color: blue;
+   color: white;
+   text-align: center;
+   border: 20px solid blue;
+}
+.container{
+    font-size: 30px;
+    display: block;
+    padding: 30px;
+   
+}
+.Search_Btn{
+    display: block;
+    padding: 30px;
+    border: 10px none rgb(13, 13, 119);
+    
+}
