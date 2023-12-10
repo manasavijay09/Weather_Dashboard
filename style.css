@@ -30,23 +30,58 @@ button{
     width: 300px;
    }
 .current-city{
-width: 30;
+width: 90%;
  padding: 80px;
- margin: 5px;
- height: 30px;
+ margin:  10%;
+
  border: 1px solid grey;
 }
 .weather-search-info{
-display: flex;
+
 float: left;
 width: 50%;
 }
 .five-day-forecast{
     padding: 20px;
-    margin: 10px;
+  
     display:flex;
     justify-content:space-evenly;
     border:1px solid;
+}
+
+.day-1{
+    background-color: blue;
+    height: 100%;
+    color: white;
+   
+}
+    
+
+.day-2{
+    background-color: blue;
+    height: 100%;
+    color: white;
+   
+}
+    
+
+.day-3{
+    background-color: blue;
+    height: 100%;
+    color: white;
+    
+}
+.day-4{
+    background-color: blue;
+    height: 100%;
+    color: white;
+    
+}
+.day-5{
+    background-color: blue;
+    height: 100%;
+    color: white;
+    
 }
 
 
