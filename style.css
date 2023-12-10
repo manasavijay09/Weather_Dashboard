@@ -1,88 +1,93 @@
-*{
+* {
     padding: opx;
     margin: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-h1{
-   background-color: blue;
-   color: white;
-   text-align: center;
-   border: 10px solid blue
+
+h1 {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    border: 10px solid blue
 }
-.container{
-    font-size: 30px;
-    display: inline;
-    padding: 10px;
-   
-    
-}
-.search{
-    padding: 5px;
-    margin: 10px;
-    width: 300px;
-   }
-    
-button{
-    background-color:rgb(52, 52, 221);
-    color:white;
+
+
+.search {
     padding: 5px;
     margin: 20px;
     width: 300px;
-   }
-.current-city{
-width: 90%;
- padding: 80px;
- margin:  10%;
-
- border: 1px solid grey;
-}
-.weather-search-info{
-
-float: left;
-width: 50%;
-}
-.five-day-forecast{
-    padding: 20px;
-  
-    display:flex;
-    justify-content:space-evenly;
-    border:1px solid;
 }
 
-.day-1{
+button {
+    background-color: rgb(52, 52, 221);
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    width: 46%;
+}
+.weather-search-info {
+    
+    float: left;
+    width: 50%;
+    padding: 3%;
+}
+
+
+.current-city {
+    width: 40%;
+    padding: 5%;
+    margin: 30%;
+    border: 1px solid grey;
+    float: left;
+}
+
+
+.five-day-forecast {
+    padding: 5%;
+    margin: 10%;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: 1px solid;
+}
+
+.day {
+    background-color: blue;
+    color: white;
+    padding: 1%;
+    margin: 1%;
+    width: 15%;
+    max-width: 28%;
+    border: 1px dotted rgb(187, 34, 34);
+}
+
+
+.day-2 {
     background-color: blue;
     height: 100%;
     color: white;
-   
-}
-    
 
-.day-2{
+}
+
+
+.day-3 {
     background-color: blue;
     height: 100%;
     color: white;
-   
-}
-    
 
-.day-3{
+}
+
+.day-4 {
     background-color: blue;
     height: 100%;
     color: white;
-    
+
 }
-.day-4{
+
+.day-5 {
     background-color: blue;
     height: 100%;
     color: white;
-    
+
 }
-.day-5{
-    background-color: blue;
-    height: 100%;
-    color: white;
-    
-}
-
-
-

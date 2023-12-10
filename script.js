@@ -10,7 +10,19 @@ var myApiKey ="e1083fdefbd4e667c6efe2e8e7398d90"
 srchBtn.addEventListener("click", srchHandler);
 
 function  displayWeather(city, data){
-    //tbc
+    var fiveDayforecastEl=document.querySelector('.five-day-forecast')
+    var forecastHTML = ""
+    for(var i=0;i<data.list.length;i=i+8){
+        forecastHTML += `<div class="day">
+        <div>${dayjs(data.list[i].dt_txt).format("MM/DD/YYYY")}</div>
+        <div>Temp: <span>${data.list[i].main.temp}</span><sup>0</sup><img src="https://openweathermap.org/img/wn/${data.list[i].weather[0].icon}@2x.png" /></div>
+        <div>wind: <span>${data.list[i].wind.speed}</span>mph</div>
+        <div>Humidity: <span>${data.list[i].main.humidity}</span>%</div>
+    </div>`
+
+    }
+    fiveDayforecastEl.innerHTML=forecastHTML
+
 }
 function  fetchWeatherFromOpenWeathermap(city,){
     //tbc
@@ -18,7 +30,7 @@ function  fetchWeatherFromOpenWeathermap(city,){
    //
   // api.openweathermap.org/data/2.5/forecast?q={city name}&appid={API key}
    
-    let weathertForecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${myApiKey}`;
+    let weathertForecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${myApiKey}&units=imperial`;
 
     fetch(weathertForecastUrl)
     .then(function (res) {
