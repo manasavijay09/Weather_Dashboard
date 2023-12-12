@@ -33,6 +33,7 @@ function  fetchWeatherFromOpenWeathermap(city,){
     let weathertForecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${myApiKey}&units=imperial`;
 
     fetch(weathertForecastUrl)
+   
     .then(function (res) {
         return res.json();
     })
@@ -45,6 +46,8 @@ function  fetchWeatherFromOpenWeathermap(city,){
 
     })
 }
+
+
 
 
 function currentWeather(city) {
@@ -71,10 +74,11 @@ function currentWeather(city) {
 
         })
 }
+   
 
 function srchHandler() {
     let city = cityEl.value.trim();
-    console.log("city= ", city);
+    console.log("city= ", city); JSON.parse(localStorage.getItem('city'));
 
     currentWeather(city);
     fetchWeatherFromOpenWeathermap(city)
